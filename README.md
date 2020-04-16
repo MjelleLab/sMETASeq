@@ -40,9 +40,8 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
 ## Download pre-compiled kraken2 standard database:
 
-`wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/*`
+`wget -r http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/`
 
-make a directory called “kraken2_DB” and put all database files there.
 
 ## Download and unzip bowtie2 index:
 
