@@ -33,6 +33,10 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
 `conda install -c bioconda bowtie2`
 
+## Install cutadapt
+
+`conda install -c bioconda cutadapt`
+
 
 ## Download pre-compiled kraken2 standard database:
 
