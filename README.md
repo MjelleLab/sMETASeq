@@ -52,7 +52,7 @@ make a directory called “kraken2_DB” and put all database files there.
 
 `wget ftp://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/14.0/genome_coordinates/gff3/homo_sapiens.GRCh38.gff3.gz`
 
-`gunzip ftp://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/14.0/genome_coordinates/gff3/homo_sapiens.GRCh38.gff3.gz`
+`gunzip homo_sapiens.GRCh38.gff3.gz`
 
 
 
