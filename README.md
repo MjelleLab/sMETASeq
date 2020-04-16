@@ -1,0 +1,2 @@
+# sMETASeq---command-line
+sMETASeq
