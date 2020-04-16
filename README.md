@@ -59,4 +59,6 @@ make a directory called “kraken2_DB” and put all database files there.
 `gunzip homo_sapiens.GRCh38.gff3.gz`
 
 
+## Download example data 
 
+`wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/*`
