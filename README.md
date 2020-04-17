@@ -21,21 +21,16 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
 Linux:
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
-## Install kraken:
+## Install dependencies using conda:
 
 `conda install -c bioconda kraken2`
 
-## Install htseq:
-
 `conda install -c bioconda htseq`
-
-## Install bowtie2:
 
 `conda install -c bioconda bowtie2`
 
-## Install cutadapt
-
 `conda install -c bioconda cutadapt`
+
 
 
 ## Download pre-compiled kraken2 standard database:
