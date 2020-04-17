@@ -59,8 +59,8 @@ Modify RNACentral file by adding "chr"-prefix:
 
 ## Download example data and sMETASeq scripts
 
-`wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/*`
-`wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/*`
+    `wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/*`
+    `wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/*`
 
 
 # Running sMETASeq on example data 
