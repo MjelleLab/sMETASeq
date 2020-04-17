@@ -52,7 +52,26 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
 `gunzip homo_sapiens.GRCh38.gff3.gz`
 
+Modify RNACentral file by adding "chr"-prefix:
 
-## Download example data 
+`awk '{ if($1 !~ /^#/){print "chr"$0} else{print $0} }' homo_sapiens.GRCh38.gff3 > homo_sapiens.GRCh38.chr.gff3`
+
+
+## Download example data and sMETASeq scripts
 
 `wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/*`
+`wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/*`
+
+
+# Running sMETASeq on example data 
+
+Depending on which library preparation method was used to create the small RNA libraries, we have created three different bash-scripts:  `sMETASeq_TruSeq.sh` `sMETASeq_NEXTFlex.sh` `sMETASeq_NEBNext.sh`. They differ in how adapters are being trimmed from the sequences. In our example data, we will use `sMETASeq_NEXTFlex.sh`.
+The input files are specified in `files.txt`. The file names should be the string preceding `.fastq.gz` of the filename. 
+
+The scripts are run by typing `bash sMETASeq_NEXTFlex.sh`
+
+
+## Analyze results from example data 
+
+
+
