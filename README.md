@@ -16,45 +16,45 @@ This tutorial shows step-by-step how to generate a metagenomics and host small R
 ## Install conda: 
 
 Mac:
-https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
+    `https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html`
 
 Linux:
-https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+    `https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html`
 
 ## Install dependencies using conda:
 
-`conda install -c bioconda kraken2`
+    `conda install -c bioconda kraken2`
 
-`conda install -c bioconda htseq`
+    `conda install -c bioconda htseq`
 
-`conda install -c bioconda bowtie2`
+    `conda install -c bioconda bowtie2`
 
-`conda install -c bioconda cutadapt`
+    `conda install -c bioconda cutadapt`
 
 
 
 ## Download pre-compiled kraken2 standard database:
 
-`wget -r http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/`
+    `wget -r http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/`
 
 
 ## Download and unzip bowtie2 index:
 
-`wget ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38/seqs_for_alignment_pipelines/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz`
+    `wget ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38.  /seqs_for_alignment_pipelines/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz`
 
-`tar -xvzf GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz`
+    `tar -xvzf GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz`
 
 ## Download miRbase and RNACentral databases: 
 
-`wget ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3`
+    `wget ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3`
 
-`wget ftp://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/14.0/genome_coordinates/gff3/homo_sapiens.GRCh38.gff3.gz`
+    `wget ftp://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/14.0/genome_coordinates/gff3/homo_sapiens.GRCh38.gff3.gz`
 
-`gunzip homo_sapiens.GRCh38.gff3.gz`
+    `gunzip homo_sapiens.GRCh38.gff3.gz`
 
 Modify RNACentral file by adding "chr"-prefix:
 
-`awk '{ if($1 !~ /^#/){print "chr"$0} else{print $0} }' homo_sapiens.GRCh38.gff3 > homo_sapiens.GRCh38.chr.gff3`
+    `awk '{ if($1 !~ /^#/){print "chr"$0} else{print $0} }' homo_sapiens.GRCh38.gff3 > homo_sapiens.GRCh38.chr.gff3`
 
 
 ## Download example data and sMETASeq scripts
