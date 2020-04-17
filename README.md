@@ -47,7 +47,7 @@ To activate the environment you might have to type `bash` and `conda activate sM
 
 ## Download pre-compiled kraken2 standard database:
 
-    wget -r http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/
+    wget -r -np -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/
 
 
 ## Download and unzip bowtie2 index:
