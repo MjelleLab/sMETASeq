@@ -20,6 +20,20 @@ Mac:
 Linux:
     https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
+## Make directory in which scripts and other dependencies will be stored and create a conda environment
+    mkdir sMETASeq
+    conda create --name sMETASeq
+ When conda asks you to proceed, type `y`
+ 
+ To activate this environment, use
+
+     conda activate sMETASeq
+
+To deactivate an active environment, use
+
+     conda deactivate
+
+
 ## Install dependencies using conda:
 
     conda install -c bioconda kraken2
