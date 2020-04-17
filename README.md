@@ -47,6 +47,7 @@ To activate the environment you might have to type `bash` and `conda activate sM
 
 ## Download pre-compiled kraken2 standard database:
 
+    mkdir
     wget -r -np -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/
 
 
