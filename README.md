@@ -22,6 +22,7 @@ Linux:
 
 ## Make directory in which scripts and other dependencies will be stored and create a conda environment
     mkdir sMETASeq
+    cd sMETASeq
     conda create --name sMETASeq
  When conda asks you to proceed, type `y`
  
@@ -33,6 +34,7 @@ To deactivate an active environment, use
 
      conda deactivate
 
+To activate the environment you might have to type `bash` and `conda activate sMETASeq`
 
 ## Install dependencies using conda:
 
