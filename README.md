@@ -1,4 +1,4 @@
-# sMETASeq---command-line
+# sMETASeq
 
 # Purpose 
 
