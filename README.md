@@ -49,7 +49,7 @@ To activate the environment you might have to type `bash` and `conda activate sM
 
     mkdir kraken2_DB
     cd kraken2_DB
-    wget -nH -nd  -r -np -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/
+    wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/
 
 
 ## Download and unzip bowtie2 index:
@@ -58,7 +58,7 @@ To activate the environment you might have to type `bash` and `conda activate sM
 
     tar -xvzf GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz
 
-## Download miRbase and RNACentral databases: 
+## Download miRBase and RNACentral databases: 
 
     wget ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
 
@@ -73,8 +73,8 @@ Modify RNACentral file by adding "chr"-prefix:
 
 ## Download example data and sMETASeq scripts
 
-    wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/*
-    wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/*
+    wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/
+    wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/
 
 
 ## Running sMETASeq on example data 
