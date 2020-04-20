@@ -86,7 +86,7 @@ The scripts are run by typing `bash sMETASeq_NEXTFlex.sh`
 
 The pipeline will create three output files for each input file:
 
-`$FILE.kraken_mpa.csv` # The kraken2 output file containing counts to each OTU in kraken
+`$FILE.kraken_report.csv` # The kraken2 output file containing counts to each OTU in kraken
 
 `$FILE.miRBase.csv` # Counts for mature miRNAs from miRBase
 
