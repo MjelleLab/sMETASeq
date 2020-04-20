@@ -93,7 +93,9 @@ The pipeline will create three output files for each input file:
 `$FILE.RNACentral.csv` # Counts for ncRNAs from RNACentral
 
 
-## Analyze results from example data 
+Output results for the the example data can downloaded from the following folder
+
+   http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData_Results/
 
 
 
