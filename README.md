@@ -82,7 +82,7 @@ Modify RNACentral file by adding "chr"-prefix:
 Depending on which library preparation method was used to create the small RNA libraries, we have created three different bash-scripts:  `sMETASeq_TruSeq.sh` `sMETASeq_NEXTFlex.sh` `sMETASeq_NEBNext.sh`. They differ in how adapters are being trimmed from the sequences. In our example data, we will use `sMETASeq_NEXTFlex.sh`.
 The input files are specified in `files.txt`. The file names should be the string preceding `.fastq.gz` of the filename. 
 
-The scripts are run by typing `bash sMETASeq_NEXTFlex.sh`
+The scripts are run by typing `sh sMETASeq_NEXTFlex.sh`
 
 The pipeline will create three output files for each input file:
 
