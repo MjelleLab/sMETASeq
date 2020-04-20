@@ -49,7 +49,7 @@ To activate the environment you might have to type `bash` and `conda activate sM
 
     mkdir kraken2_DB
     cd kraken2_DB
-    wget http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/*
+    wget -nH -nd  -r -np -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/kraken2_DB/
 
 
 ## Download and unzip bowtie2 index:
