@@ -95,7 +95,7 @@ The pipeline will create three output files for each input file:
 
 Output results for the the example data can downloaded from the following folder
 
-   http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData_Results/
+    http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData_Results/
 
 
 
