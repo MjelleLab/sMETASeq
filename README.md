@@ -70,7 +70,7 @@ Modify RNACentral file by adding "chr"-prefix:
 
 
 ## Download example data and sMETASeq scripts
-# Edit: Sample data has been removed. Please email me: robin.mjelle@ntnu.no or robinmjelle@gmail.com
+### Edit: Sample data has been removed. Please email me: robin.mjelle@ntnu.no or robinmjelle@gmail.com
 
     wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/
     wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/
