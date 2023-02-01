@@ -75,7 +75,10 @@ Modify RNACentral file by adding "chr"-prefix:
     wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/ExampleData/
     wget -r --no-parent -nH --cut-dirs=3 -R "index.html*" http://havpryd.medisin.ntnu.no/robinm/sMETASeq/scripts/
 
+### Kraken databases can be downloaded from here:
 
+     https://benlangmead.github.io/aws-indexes/k2
+     
 ## Running sMETASeq on example data 
 
 Depending on which library preparation method was used to create the small RNA libraries, we have created three different bash-scripts:  `sMETASeq_TruSeq.sh` `sMETASeq_NEXTFlex.sh` `sMETASeq_NEBNext.sh`. They differ in how adapters are being trimmed from the sequences. In our example data, we will use `sMETASeq_NEXTFlex.sh`.
